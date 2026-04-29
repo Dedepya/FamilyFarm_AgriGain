@@ -1,0 +1,5 @@
+{
+  "name": "FAMILYFARM / AGRI GAIN",
+  "description": "An agricultural platform providing products, loans & schemes information, pest suggestions, and weather updates for farmers.",
+  "requestFramePermissions": ["geolocation"]
+}
