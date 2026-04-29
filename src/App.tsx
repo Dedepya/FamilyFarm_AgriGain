@@ -26,7 +26,8 @@ export default function App() {
           <Header />
           <main className="flex-grow">
             <Routes>
-              <Route path="/" element={<Home />} />
+              {/* Redirect root to best deals page (vegetables category) */}
+              <Route path="/" element={<Category key="vegetables" />} />
               <Route path="/category/:id" element={<Category />} />
               <Route path="/search" element={<Search />} />
               <Route path="/loans" element={<Loans />} />
