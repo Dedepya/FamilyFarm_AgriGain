@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { CartProvider } from './context/CartContext';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -26,8 +26,8 @@ export default function App() {
           <Header />
           <main className="flex-grow">
             <Routes>
-              {/* Redirect root to best deals page (vegetables category) */}
-              <Route path="/" element={<Category key="vegetables" />} />
+              {/* Redirect root to vegetables category */}
+              <Route path="/" element={<Navigate to="/category/vegetables" replace />} />
               <Route path="/category/:id" element={<Category />} />
               <Route path="/search" element={<Search />} />
               <Route path="/loans" element={<Loans />} />
