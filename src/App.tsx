@@ -20,14 +20,14 @@ import ChatAssistant from './components/ChatAssistant';
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/FamilyFarm_AgriGain/">
       <CartProvider>
         <div className="min-h-screen flex flex-col bg-stone-50 text-stone-900 font-sans">
           <Header />
           <main className="flex-grow">
             <Routes>
               {/* Redirect root to vegetables category */}
-              <Route path="/" element={<Navigate to="/category/vegetables" replace />} />
+              <Route path="/" element={<Navigate to="category/vegetables" replace />} />
               <Route path="/category/:id" element={<Category />} />
               <Route path="/search" element={<Search />} />
               <Route path="/loans" element={<Loans />} />
