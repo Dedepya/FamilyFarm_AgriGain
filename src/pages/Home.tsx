@@ -31,7 +31,7 @@ export default function Home() {
               Your one-stop destination for agricultural products, loans, pest control suggestions, and real-time weather updates.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link to="/category/vegetables" className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full font-semibold transition-colors flex items-center">
+              <Link to="/category" className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full font-semibold transition-colors flex items-center">
                 Shop Now <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
               <Link to="/loans" className="bg-white hover:bg-green-50 text-green-900 px-8 py-3 rounded-full font-semibold transition-colors">
